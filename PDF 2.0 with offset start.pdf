@@ -1,16 +1,15 @@
-# This is a simple PDF 2.0 test file that demonstrates several concepts:
-# 1) a PDF file does not need to start at byte 0 - however, offsets
-# specified within a PDF file are based on the start of the PDF 2.0 data,
-# where that starts with the %PDF designator
-# 2) the document information dictionary (Info) in the trailer is deprecated in PDF 2.0;
-# it should only be used to store the CreationData and ModDate fields.
-# Document metadata is recommended to be stored in XMP metadata, so this document
-# includes a very simple XMP metadata packet.
+# A PDF processor may encounter PDF 2.0 files that contain information
+# before the actual PDF 2.0 data. This can occur, for example,
+# in a print workflow when a print processor needs to write printer
+# control data to select a PDF processing mode.
 #
-# The syntax of this PDF intentionally uses gratuitous whitespace
-# for the purposes of illustration.
+# You cannot rely on all PDF 2.0 processors to successfully open
+# PDF files with non-PDF data beforehand; a PDF 2.0 processor
+# might reject this as invalid any file that does not start with.# a percent sign and then "PDF".
 #
-# Note: the PDF data in this file starts at byte 723 
+# It is not recommended that a PDF producer write any data
+# into a PDF file other than the actual PDF data, unless needed
+# for a specific workflow or use case.
 
 %PDF-2.0
 ÝÌ»ª    
@@ -24,7 +23,7 @@ endobj
 
 2 0 obj
 <<
-  /Length 2449
+  /Length 2409
   /Type /Metadata
   /Subtype /XML
 >>
