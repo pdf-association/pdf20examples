@@ -10,7 +10,15 @@
 &nbsp;&nbsp;&nbsp;
 ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCJL_M0VH2lm65gvGVarUTKQ?style=social)
 
-This is a collection of example PDF 2.0 files which comply with [ISO 32000-2:2020](https://www.iso.org/standard/75839.html). The files in this collection are intended for educational purposes and are intentionally kept relatively simple. Each example illustrates the usage of a new PDF 2.0 feature. The examples in this set include:
+This is a collection of example PDF 2.0 files which comply with [ISO 32000-2:2020](https://www.iso.org/standard/75839.html). The files in this collection are intended for educational purposes and are intentionally kept relatively simple. Each example illustrates the usage of a new PDF 2.0 feature.
+
+# Contributions
+
+We welcome your contributions of additional examples! For any files, materials, pull requests or other contributions you offer for this project: you hereby grant the PDF Association copyright to these contributions, as well as grant permission for the PDF Association to license your contributions under the same license as the other contents of this repository. The PDF Association does not request an exclusive copyright. We make this request so that we can offer your contribution under the same [Creative Commons Attribution 4.0 International Public License](LICENSE.md) we are using for the rest of these examples and materials.
+
+# Example Files
+
+The examples in this set include:
 
 ## Simple PDF 2.0 file.pdf
 This is a single page PDF that demonstrates a fairly simple set of text and path operators. The content stream for the PDF page contains comments that describe the operators being used to define the page content. This PDF includes example file metadata that you can use to see commonly provided XMP metadata fields.
