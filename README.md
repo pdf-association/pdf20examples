@@ -1,5 +1,16 @@
-# pdf20examples
-PDF 2.0 example files - this is a collection of example PDF 2.0 files. The files in this collection are intended for educational purposes and are intentionally kept relatively simple. The examples in this set include:
+# PDF 2.0 Examples
+
+![GitHub](https://img.shields.io/github/license/pdf-association/pdf20examples)
+&nbsp;&nbsp;&nbsp;
+![PDF support](https://img.shields.io/badge/PDF-2.0-blue)
+&nbsp;&nbsp;&nbsp;
+![LinkedIn](https://img.shields.io/static/v1?style=social&label=LinkedIn&logo=linkedin&message=PDF-Association)
+&nbsp;&nbsp;&nbsp;
+![Twitter Follow](https://img.shields.io/twitter/follow/PDFAssociation?style=social)
+&nbsp;&nbsp;&nbsp;
+![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCJL_M0VH2lm65gvGVarUTKQ?style=social)
+
+This is a collection of example PDF 2.0 files which comply with [https://www.iso.org/standard/75839.html](ISO 32000-2:2020). The files in this collection are intended for educational purposes and are intentionally kept relatively simple. Each example illustrates the usage of a new PDF 2.0 feature. The examples in this set include:
 
 ## Simple PDF 2.0 file.pdf
 This is a single page PDF that demonstrates a fairly simple set of text and path operators. The content stream for the PDF page contains comments that describe the operators being used to define the page content. This PDF includes example file metadata that you can use to see commonly provided XMP metadata fields.
@@ -26,4 +37,4 @@ This is a very simple PDF 2.0 file. It demonstrates a PDF file that does not sta
 ## PDF 2.0 with page level output intent.pdf
 This example shows how to add a page-level output intent to a PDF page, which is a new feature of PDF 2.0. This PDF has a file-level PDF/X output intent, and also has a page-level PDF/X output intent on page 1 that differs from the document-level output intent. The output intents in this PDF are RGB colorspaces for demonstration purposes: one will typically use an output intent for a CMYK condition.
 
-
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International Public License</a>.
