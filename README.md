@@ -33,6 +33,17 @@ This file also gives an example of specifying a calibrated RGB color space in a 
 ## 'PDF 2.0 UTF-8 bookmarks.pdf'
 This PDF 2.0 example contains two outline items (a.k.a. bookmarks), with one encoded as UTF-16BE (supported in PDF 1.x) and the other encoded as UTF-8 (PDF 2.0). Both bookmarks should be displayed or extracted correctly without any leading garbage bytes prior to the "UTF" text in PDF Processors that support both PDF 1.x and PDF 2.0.
 
+<TABLE ALIGN="center" BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR>
+    <TD> <img src="./images/correct-utf8-bookmarks.png" height="200"> </TD>
+    <TD> <img src="./images/incorrect-utf8-bookmarks.png" height="200"> </TD>
+</TR>
+<TR>
+    <TD ALIGN="center"> Correct </TD>
+    <TD ALIGN="center"> Incorrect </TD>
+</TR>
+</TABLE>
+
 ## 'PDF 2.0 UTF-8 string in annotation.pdf'
 This PDF shows how to place UTF-8 Unicode encoded strings into PDF strings. The /Content entry for the annotation contains Thai language text encoded in UTF-8. The ability to encode text in UTF-8 format is new in PDF 2.0.
 Note that many non-PDF 2.0 aware viewers will have problems with this example:
