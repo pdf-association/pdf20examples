@@ -68,6 +68,41 @@ Several PDF Association members also make available sample PDF 2.0 files. These 
 * [Various encryption examples](https://github.com/itext/itext7/tree/develop/kernel/src/test/resources/com/itextpdf/kernel/crypto/PdfEncryptionTest)
 * [Various digital signature examples](https://github.com/itext/itext7/tree/develop/sign/src/test/resources/com/itextpdf/signatures/sign/SigningTest)
 
+# Confirming validity of files
+
+The following process was used to confirm the validity of each PDF 2.0 example file. In most cases these tools are **not** PDF 2.0-aware so these checks are really only confirming the PDF file structure, cross-reference table and COS syntax - so there still may be errors!:
+
+* the PDF opens without error in numerous PDF tools: Adobe, Foxit, Nitro, muPDF, PDF Studio Viewer, PDF Architect, xpdf 4, Xodo, PDF-XChange, iText RUPS, PDFBox Debugger, etc.
+* Adobe Acrobat Pro pre-flight "Syntax Check" reports no issues
+* Adobe Acrobat does not ask to save on exit
+* `mutool clean -s` reports no issues
+* `qpdf --check` reports no issues
+* `pdfcpu validate --mode=strict` reports no issues (also requires local modification to version.go to process `%PDF-2.0`)
+```
+$ git diff
+diff --git a/pkg/pdfcpu/version.go b/pkg/pdfcpu/version.go
+index 8c120d8..cfa1b42 100644
+--- a/pkg/pdfcpu/version.go
++++ b/pkg/pdfcpu/version.go
+@@ -38,6 +38,7 @@ const (
+        V15
+        V16
+        V17
++       V20 //****************
+ )
+
+ // PDFVersion returns the PDFVersion for a version string.
+@@ -60,6 +61,8 @@ func PDFVersion(versionStr string) (Version, error) {
+                return V16, nil
+        case "1.7":
+                return V17, nil
++       case "2.0":           //******************
++               return V20, nil   //******************
+        }
+
+        return -1, errors.New(versionStr)
+```
+
 
 ---
 
