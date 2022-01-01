@@ -1,7 +1,10 @@
-# pdf20examples
-PDF 2.0 example files - this is a collection of example PDF 2.0 files. The files in this collection are intended for educational purposes and are intentionally kept relatively simple. The examples in this set include:
+# PDF 2.0 examples
+This repository is a collection of example PDF 2.0 files. The files in this collection are intended for educational purposes and are intentionally kept relatively simple. The examples in this set include:
 
-## Simple PDF 2.0 file.pdf
+## [pdf20-utf8-test.pdf](pdf20-utf8-test.pdf)
+This is a single page PDF that contains various non-trivial UTF-8 encoded text strings for Outlines (bookmarks), Optional Content layer names, AltText and Information dictionary values. It is designed to be used by both technical and non-technical users to evaluate PDF processor support for correct PDF 2.0 UTF-8 text strings. It is not intended as a comprehensive assessment of UTF-8 support or a test of every possible PDF text string in a PDF 2.0 conforming file.
+
+## [Simple PDF 2.0 file.pdf](Simple%20PDF%202.0%20file.pdf)
 This is a single page PDF that demonstrates a fairly simple set of text and path operators. The content stream for the PDF page contains comments that describe the operators being used to define the page content. This PDF includes example file metadata that you can use to see commonly provided XMP metadata fields.
 
 ## Simple 2.0 via incremental and offset start.pdf
@@ -25,5 +28,3 @@ This is a very simple PDF 2.0 file. It demonstrates a PDF file that does not sta
 
 ## PDF 2.0 with page level output intent.pdf
 This example shows how to add a page-level output intent to a PDF page, which is a new feature of PDF 2.0. This PDF has a file-level PDF/X output intent, and also has a page-level PDF/X output intent on page 1 that differs from the document-level output intent. The output intents in this PDF are RGB colorspaces for demonstration purposes: one will typically use an output intent for a CMYK condition.
-
-
